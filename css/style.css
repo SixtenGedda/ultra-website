@@ -1,0 +1,12 @@
+#swap-btn {
+  width: 2em;
+  height: 2em;
+  align-items: center;
+  border: 0;
+  background-color: white;
+}
+
+#swap-btn:hover {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
