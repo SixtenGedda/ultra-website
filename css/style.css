@@ -1,10 +1,11 @@
 body {
-  min-height: 100vh;
+  height: 100vh;
   color: white;
-  background: radial-gradient(ellipse at center, #28447C, #1a2d54);
+  background: radial-gradient(ellipse at center, #1f355e, #101a33);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 
 }
 
@@ -16,28 +17,41 @@ main {
   font-family: roboto;
 }
 
+h1 {
+  font-size: 60px;
+}
+
 
 #route-form {
   display: flex;
   flex-direction: row;
+  color: white;
 }
 
 #route-form input {
-  border-radius: 8px;
-  border: 0px;
-  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
   font-family: roboto;
+  color: white;
+  font-size: 20px;
+}
+
+#route-form input::placeholder {
+  color: white;
 }
 
 #swap-btn {
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
+  border-radius: 8px;
   margin: 5px;
   background: none;
+  border: none;
 }
 
 #swap-btn:hover {
