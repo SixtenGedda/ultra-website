@@ -6,11 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link href="css/style.css" rel="stylesheet">
+  <script src="config.js"> </script>
+  <script src="loadMaps.js"> </script>
+
 </head>
 
 <body>
   <main>
     <h1>Sök resa</h1>
+    <div class="time-container">
+      <p id="avgangstid"></p>
+      <p id="ankomsttid"></p>
+    </div>
+    <div id="pano"></div>
     <form id="route-form">
       <input type="text" id="from" name="from" placeholder="Från" aria-label="Avresa" aria-required="true"
         aria-autocomplete="list" aria-controls="from-results" role="combobox" spellcheck="false" autocomplete="off"
@@ -28,6 +36,10 @@
 
     </form>
   </main>
+  <script src="script.js">
+
+  </script>
+
 </body>
 
 </html>

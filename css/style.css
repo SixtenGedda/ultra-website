@@ -42,6 +42,11 @@ h1 {
   color: white;
 }
 
+#route-form input:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+
 #swap-btn {
   width: 3em;
   height: 3em;
@@ -58,4 +63,69 @@ h1 {
   transform: rotate(180deg);
   transition: transform 0.5s ease;
   cursor: pointer;
+}
+
+.pac-container {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: top-left top-right bottom-right bottom-left;
+  border-radius: 0 0 15px 15px;
+}
+
+.pac-item {
+  background: rgba(0, 0, 0, 0.3);
+  color: white !important;
+  border-color: black;
+  padding: 15px;
+}
+
+.pac-item-query {
+  color: white;
+}
+
+.pac-icon {
+  display: none
+}
+
+.pac-item:hover {
+  background-color: #444 !important;
+}
+
+#pano {
+  width: 250px;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-out;
+  align-self: flex-start;
+}
+
+#pano.show {
+  height: 250px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#avgangstid:empty {
+  display: none;
+}
+
+#avgangstid {
+  align-self: flex-end;
+  background-color: black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#ankomsttid {
+  align-self: flex-start;
+  padding-left: 30px;
 }
